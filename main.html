@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="./styles/styles_main.css">
+</head>
+<body>
+    <header>
+        <div class="header-upper">
+            <div class="search-panel">
+                <input type="text" placeholder="Поиск...">
+            </div>
+            <button class="button-user" onclick="toggleMenu()">
+                <img src="./img/User.png" alt="Аватар" class="image">
+            </button>
+            <div class="dropdown-menu" id="user-menu">
+                <div class="username">User</div>
+                <div class="logout-button" id="logoutButton">
+                    <a href="./index.html">Выход</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-down">
+            <button class="button-menu" aria-label="Открыть меню" onclick="toggleSidebarMenu()">
+                <img src="./img/Menu.svg" alt="Menu">
+            </button>
+            <div class="title-page">Главная</div>
+        </div>
+    </header>
+    <main>
+        <div class="sidebar-menu" id="sidebar-menu">
+            <a href="./main.html">
+                <img src="./img/Home.png" alt="Home" class="menu-icon">
+                Главная
+            </a>
+            <a href="#">
+                <img src="./img/Windows 12.png" alt="Dashboards" class="menu-icon">
+                Dashboards
+            </a>
+            <a href="#">
+                <img src="./img/Link.png" alt="Connections" class="menu-icon">
+                Подключения
+            </a>
+        </div>
+        <div class="block block-welcome">
+            Добро пожаловать
+        </div>
+        <div class="block first-steps">
+            <div class="steps-text">
+                <div class="title">ОСНОВЫ</div>
+                <div class="description">Следующие шаги<br>помогут вам быстро<br>завершить настройку.</div>
+            </div>
+            <div class="steps-steps">
+                <div class="step">
+                    <a href="#" class="title-step">Источник данных</a>
+                    <div class="description">Добавьте свой первый источник данных</div>
+                </div>
+                <div class="step">
+                    <a href="#" class="title-step">Dashboards</a>
+                    <div class="description">Создайте свою первую панель мониторинга</div>
+                </div>
+            </div>
+        </div>
+        <div class="block dashboards">
+            <ul class="outer-list">
+                <li class="title">Dashboards</li>
+                <li>
+                    <ul class="innet-list">
+                        <li class="recent">Недавние</li>
+                        <li class="favorites">Избранные</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="block news">
+            <div class="title">Новости</div>
+            <div class="list-news">
+                <div class="new">
+                    <img src="./img/Image.png">
+                    <div class="new-text">
+                        <p class="date">7 нояб</p>
+                        <p class="description">I’m a big fan of tasting menus. In the culinary world they let us sample a variety of dishes in small portions, helping us understand and appreciate different flavors and options.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/script_main.js"></script>
+</body>
+</html>
